@@ -1,5 +1,5 @@
 import { Heart, Ear, Users, Sparkles } from "lucide-react";
-import aboutImage from "@/assets/treatment-room.jpg";
+import aboutImage from "@/assets/professional-about.jpg";
 
 const About = () => {
   const values = [
@@ -28,7 +28,7 @@ const About = () => {
             <div className="slide-up rounded-3xl overflow-hidden shadow-xl" style={{ animationDelay: "0.2s" }}>
               <img 
                 src={aboutImage} 
-                alt="Sala de atendimento do Humaniza RJ"
+                alt="Profissional do Humaniza RJ"
                 className="w-full h-auto object-cover"
               />
             </div>

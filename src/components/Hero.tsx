@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/pilates-room-1.jpg";
+import heroImage from "@/assets/wall-art-hero.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src={heroImage} 
-                alt="Espaço de Pilates do Humaniza RJ"
+                alt="Arte na parede do Humaniza RJ"
                 className="w-full h-auto object-cover"
               />
             </div>
