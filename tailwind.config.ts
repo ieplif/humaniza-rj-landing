@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        primary: ['Poppins', 'sans-serif'],
+        secondary: ['Lato', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,16 +51,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        sage: "hsl(var(--sage-green))",
+        "light-blue": "hsl(var(--light-blue))",
+        "off-white": "hsl(var(--off-white))",
+        "burnt-earth": "hsl(var(--burnt-earth))",
+        "rosy-beige": "hsl(var(--rosy-beige))",
+        "greenish-gray": "hsl(var(--greenish-gray))",
       },
       borderRadius: {
         lg: "var(--radius)",
