@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative fade-in hidden lg:block" style={{ animationDelay: "0.2s" }}>
+          <div className="relative fade-in hidden md:block" style={{ animationDelay: "0.2s" }}>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src={heroImage} 
