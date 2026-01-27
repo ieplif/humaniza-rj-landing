@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Activity, Dumbbell, Stethoscope } from "lucide-react";
+import { Activity, Dumbbell, Stethoscope, Droplets } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -22,6 +22,12 @@ const Services = () => {
       description: "Fortalecimento, flexibilidade e consciência corporal através de movimentos controlados e respiração.",
       color: "from-burnt-earth to-burnt-earth/70"
     },
+    {
+      icon: Droplets,
+      title: "Drenagem",
+      description: "Drenagem linfática para redução de inchaços, eliminação de toxinas e melhora da circulação.",
+      color: "from-light-blue to-sage/70"
+    },
   ];
 
   return (
@@ -36,7 +42,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Card 
               key={index}
