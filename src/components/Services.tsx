@@ -40,7 +40,7 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20 slide-up overflow-hidden"
+              className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20 slide-up overflow-hidden flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`h-2 bg-gradient-to-r ${service.color}`}></div>
@@ -50,13 +50,13 @@ const Services = () => {
                 </div>
                 <CardTitle className="text-2xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base leading-relaxed mb-6">
+              <CardContent className="flex flex-col flex-grow">
+                <CardDescription className="text-base leading-relaxed mb-6 flex-grow">
                   {service.description}
                 </CardDescription>
                 <Button 
                   variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 mt-auto"
                 >
                   Saiba mais
                 </Button>
