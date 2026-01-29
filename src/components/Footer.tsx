@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>© 2025 Humaniza RJ — Todos os direitos reservados.</p>
+          <p>© 2026 Humaniza RJ — Todos os direitos reservados.</p>
           <p className="mt-2 italic">Cuidar é o primeiro passo para transformar.</p>
         </div>
       </div>
