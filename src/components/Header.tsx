@@ -26,7 +26,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Humaniza RJ" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </a>
 
