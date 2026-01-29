@@ -24,7 +24,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed">
-              Fisioterapia Pélvica, Fisioterapia Ortopédica, Pilates.
+              Fisioterapia Pélvica, Fisioterapia Ortopédica, Pilates e Drenagem.
             </p>
             
             <div className="pt-4">
