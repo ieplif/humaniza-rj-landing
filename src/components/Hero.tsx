@@ -14,8 +14,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM4NDk1ODUiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAgMy4zMTQtMi42ODYgNi02IDZzLTYtMi42ODYtNi02IDIuNjg2LTYgNi02IDYgMi42ODYgNiA2ek0wIDUyYzAtMy4zMTQgMi42ODYtNiA2LTZzNiAyLjY4NiA2IDYtMi42ODYgNi02IDYtNi0yLjY4Ni02LTZ6bTYwIDBjMC0zLjMxNC0yLjY4Ni02LTYtNnMtNiAyLjY4Ni02IDYgMi42ODYgNiA2IDYgNi0yLjY4NiA2LTZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 fade-in text-center lg:text-left">
+        <div className="flex flex-col gap-12 items-center">
+          <div className="space-y-8 fade-in text-center max-w-3xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               Assistência especializada na{" "}
               <span className="bg-gradient-to-r from-sage to-light-blue bg-clip-text text-transparent">
@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative fade-in hidden md:block" style={{ animationDelay: "0.2s" }}>
+          <div className="relative fade-in w-full max-w-2xl" style={{ animationDelay: "0.2s" }}>
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src={heroImage} 
