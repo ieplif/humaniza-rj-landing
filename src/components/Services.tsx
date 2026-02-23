@@ -145,9 +145,9 @@ const Services = () => {
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="flex justify-center my-4">
+              <div className="my-4">
                 {selectedService.images.map((img, i) => (
-                  <div key={i} className="rounded-xl overflow-hidden aspect-[4/3]">
+                  <div key={i} className="w-full rounded-xl overflow-hidden aspect-[4/3]">
                     <img
                       src={img}
                       alt={`${selectedService.title} - imagem ${i + 1}`}
