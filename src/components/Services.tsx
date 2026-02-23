@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Activity, Dumbbell, Stethoscope, Droplets } from "lucide-react";
-import pilatesRoom1 from "@/assets/pilates-room-1.jpg";
-import pilatesRoom2 from "@/assets/pilates-room-2.jpg";
-import treatmentRoom from "@/assets/treatment-room.jpg";
-import professionalAbout from "@/assets/professional-about.jpg";
+import abstractPelvic from "@/assets/abstract-pelvic.jpg";
+import abstractOrthopedic from "@/assets/abstract-orthopedic.jpg";
+import abstractPilates from "@/assets/abstract-pilates.jpg";
+import abstractDrainage from "@/assets/abstract-drainage.jpg";
 
 interface ServiceDetail {
   icon: React.ComponentType<{ className?: string }>;
@@ -35,7 +35,7 @@ const Services = () => {
         "Preparação para o parto",
         "Fortalecimento do assoalho pélvico",
       ],
-      images: [treatmentRoom, professionalAbout],
+      images: [abstractPelvic],
     },
     {
       icon: Stethoscope,
@@ -50,7 +50,7 @@ const Services = () => {
         "Correção postural",
         "Prevenção de lesões e recidivas",
       ],
-      images: [treatmentRoom, professionalAbout],
+      images: [abstractOrthopedic],
     },
     {
       icon: Dumbbell,
@@ -65,7 +65,7 @@ const Services = () => {
         "Alívio de dores na coluna",
         "Aumento da consciência corporal",
       ],
-      images: [pilatesRoom1, pilatesRoom2],
+      images: [abstractPilates],
     },
     {
       icon: Droplets,
@@ -80,7 +80,7 @@ const Services = () => {
         "Relaxamento e bem-estar",
         "Auxílio no pós-operatório",
       ],
-      images: [treatmentRoom, professionalAbout],
+      images: [abstractDrainage],
     },
   ];
 
@@ -145,7 +145,7 @@ const Services = () => {
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="grid grid-cols-2 gap-3 my-4">
+              <div className="flex justify-center my-4">
                 {selectedService.images.map((img, i) => (
                   <div key={i} className="rounded-xl overflow-hidden aspect-[4/3]">
                     <img
