@@ -55,16 +55,16 @@ const ContactForm = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-background to-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12 slide-up">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
-              Dê o primeiro passo para cuidar de você
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Preencha o formulário e entraremos em contato em breve
-            </p>
-          </div>
-          
+        <div className="text-center mb-12 slide-up">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
+            Dê o primeiro passo para cuidar de você
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Preencha o formulário e entraremos em contato em breve
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6 slide-up">
             <div className="space-y-2">
               <Label htmlFor="name">Nome completo *</Label>
@@ -142,6 +142,26 @@ const ContactForm = () => {
               <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>
+
+          <div className="slide-up space-y-4">
+            <div className="rounded-xl overflow-hidden border border-border shadow-sm h-[300px] lg:h-full min-h-[300px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5!2d-43.39!3d-22.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695dd2b0c1%3A0x0!2sEstr.+Cel.+Pedro+Corr%C3%AAa%2C+740+-+Jacarepagu%C3%A1%2C+Rio+de+Janeiro+-+RJ%2C+22775-090!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização do consultório"
+              />
+            </div>
+            <div className="text-center lg:text-left">
+              <p className="text-sm text-muted-foreground">
+                📍 Estr. Cel. Pedro Corrêa, 740, Sala 807 — Barra Olímpica, Rio de Janeiro - RJ, 22775-090
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
