@@ -147,7 +147,7 @@ const Services = () => {
 
               <div className="my-4">
                 {selectedService.images.map((img, i) => (
-                  <div key={i} className="w-full rounded-xl overflow-hidden aspect-[4/3]">
+                  <div key={i} className="w-full max-w-md mx-auto rounded-xl overflow-hidden aspect-[3/2]">
                     <img
                       src={img}
                       alt={`${selectedService.title} - imagem ${i + 1}`}
