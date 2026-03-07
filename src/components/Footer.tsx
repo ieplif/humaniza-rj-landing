@@ -16,11 +16,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-foreground">Contato</h4>
             <div className="space-y-3 text-sm">
               <a 
-                href="mailto:contato@humanizarj.com.br" 
+                href="mailto:caissahumaniza@gmail.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                contato@humanizarj.com.br
+                caissahumaniza@gmail.com
               </a>
               <div className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-1" />
