@@ -23,10 +23,16 @@ const ContactForm = () => {
     message: "",
   });
 
+  const serviceLabels: Record<string, string> = {
+    pelvica: "Fisioterapia Pélvica",
+    ortopedica: "Fisioterapia Ortopédica",
+    pilates: "Pilates",
+    outros: "Outros",
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Validação básica
+
     if (!formData.name || !formData.email || !formData.whatsapp || !formData.service) {
       toast({
         title: "Campos obrigatórios",
@@ -36,20 +42,21 @@ const ContactForm = () => {
       return;
     }
 
-    // Aqui você pode integrar com um backend ou serviço de email
-    toast({
-      title: "Mensagem enviada com sucesso!",
-      description: "Recebemos seu contato! Nossa equipe retornará em breve para confirmar o agendamento.",
-    });
+    const serviceLabel = serviceLabels[formData.service] ?? formData.service;
+    const text = [
+      `Olá! Gostaria de agendar um atendimento.`,
+      `*Nome:* ${formData.name}`,
+      `*E-mail:* ${formData.email}`,
+      `*WhatsApp:* ${formData.whatsapp}`,
+      `*Serviço:* ${serviceLabel}`,
+      formData.message ? `*Mensagem:* ${formData.message}` : null,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
-    // Limpar formulário
-    setFormData({
-      name: "",
-      email: "",
-      whatsapp: "",
-      service: "",
-      message: "",
-    });
+    window.open(`https://wa.me/5521999419300?text=${encodeURIComponent(text)}`, "_blank");
+
+    setFormData({ name: "", email: "", whatsapp: "", service: "", message: "" });
   };
 
   return (
