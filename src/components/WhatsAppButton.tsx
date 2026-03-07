@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    // Substitua pelo número real do WhatsApp (formato: 5521999999999)
-    const phoneNumber = "5521999999999";
+    const phoneNumber = "5521999419300";
     const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os atendimentos do Humaniza RJ.");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
