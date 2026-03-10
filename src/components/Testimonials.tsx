@@ -11,24 +11,24 @@ import {
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "Na Humaniza, me senti ouvida de verdade. Cada sessão foi um passo importante no meu processo de cura.",
-      author: "Camila S."
+      text: "Este estúdio de pilates é muito agradável e acolhedor. As profissionais são super competentes e atenciosas! Recomendo de olhos fechados! 🥰",
+      author: "Suely L."
     },
     {
-      text: "O cuidado vai além do físico. Encontrei um espaço onde pude me reconectar comigo mesma.",
-      author: "Juliana M."
+      text: "Fiz fisioterapia pélvica e amei o atendimento dispensado pela Caíssa, que, mediante tratamento e exercícios, possibilitou que eu tivesse o meu desejado parto normal. Profissional competente, pontual e agradável.",
+      author: "Ana Paula C."
     },
     {
-      text: "Profissionais incríveis que realmente se importam. Minha qualidade de vida melhorou muito.",
-      author: "Patricia R."
+      text: "Excelente espaço com um diferencial é só para mulheres.",
+      author: "Patricia F."
     },
     {
-      text: "Nunca imaginei que a fisioterapia pélvica pudesse transformar tanto a minha vida. Gratidão!",
-      author: "Ana Clara L."
+      text: "Maravilhosa iluminou minha vida! Me fez calma e feliz novamente e confiante! Parabéns!",
+      author: "Lúcia M."
     },
     {
-      text: "Ambiente acolhedor e tratamento humanizado. Recomendo de coração!",
-      author: "Mariana F."
+      text: "Em 2023 procurei a Humaniza por conta da minha gestação, entrei com 12 semanas para iniciar o Pilates como indicação da minha obstetra para o parto. E foi a melhor decisão que eu tomei, além vir de uma vida sedentária, me ajudou com queixas antigas como dor de coluna e fraqueza nos joelhos. Agora estou com 39 semanas e tive também uma aula de parto com a Caíssa que é uma das fisioterapeutas que faz também a fisioterapia pélvica. É um lugar super completo, com alunas e instrutoras super acolhedoras. Super recomendo! Totalmente focada na saúde da mulher.",
+      author: "Ester B."
     }
   ];
 
